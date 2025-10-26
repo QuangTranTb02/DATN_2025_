@@ -1,0 +1,18 @@
+{
+    "name": "Trap.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1fcd5cb72dbee0c458d63d66f73d811b"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

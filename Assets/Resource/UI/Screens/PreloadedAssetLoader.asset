@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac91ddccfadd4d28a2bd3ba282456d8, type: 3}
+  m_Name: PreloadedAssetLoader
+  m_EditorClassIdentifier: 
+  _preloadedObjects:
+  - _keySource: 0
+    _key: Startup
+    _asset: {fileID: 7394246683296665706, guid: d0e39c27eaebebf43b862a28b5f9b888, type: 3}
+  - _keySource: 0
+    _key: MainMenu
+    _asset: {fileID: 471537878437964254, guid: 67606ed4612373740bc096a5f8d36602, type: 3}
+  - _keySource: 0
+    _key: Settings
+    _asset: {fileID: 8614336571997188035, guid: 91d1f5b2374d1494993ea5b4a4d5bb0c, type: 3}
