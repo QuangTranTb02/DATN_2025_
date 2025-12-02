@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: DinoSprites - 1
+      m_Hash: 930711714
+      m_Sprite: {fileID: 2072640275240368233, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2072640275240368233, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 2
+      m_Hash: 779147544
+      m_Sprite: {fileID: 6479936371207958336, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6479936371207958336, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 3
+      m_Hash: 427288974
+      m_Sprite: {fileID: 2666589269951503388, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2666589269951503388, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 4
+      m_Hash: 118717485
+      m_Sprite: {fileID: -1970450383226328902, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1970450383226328902, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Walk
+    m_Hash: 765711723
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: DinoSprites - 5
+      m_Hash: 806636731
+      m_Sprite: {fileID: 8481720763013946387, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8481720763013946387, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 6
+      m_Hash: 689773825
+      m_Sprite: {fileID: -6883348392513659430, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6883348392513659430, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 7
+      m_Hash: 505032087
+      m_Sprite: {fileID: -6325429355310368049, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6325429355310368049, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 8
+      m_Hash: 245706758
+      m_Sprite: {fileID: 18397353931549986, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 18397353931549986, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 9
+      m_Hash: 966918288
+      m_Sprite: {fileID: -4420736547314571056, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4420736547314571056, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 10
+      m_Hash: 213148781
+      m_Sprite: {fileID: 8886512509262985551, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8886512509262985551, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    - m_Name: DinoSprites - 11
+      m_Hash: 1001608443
+      m_Sprite: {fileID: -8882671606096326659, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8882671606096326659, guid: 5f89f5a4792900e4d8dd15e275136b2e, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638997373110178963
+  m_Version: 1
