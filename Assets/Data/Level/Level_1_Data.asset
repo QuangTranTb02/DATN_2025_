@@ -16,14 +16,11 @@ MonoBehaviour:
   levelNumber: 1
   sceneName: Level_01
   playerSpawnPosition: {x: 0, y: 0}
-  timeLimit: 300
   totalCollectibles: 5
-  requireAllCollectibles: 1
-  bestTime: 0
-  deaths: 0
-  isCompleted: 0
-  isUnlocked: 0
-  stars: 0
-  levelDescription: "M\xF4 t\u1EA3 level..."
-  levelThumbnail: {fileID: 0}
-  difficulty: 0
+  bestTime: 3.8795261
+  totalDeaths: 1
+  isCompleted: 1
+  isUnlocked: 1
+  stars: 3
+  description: Complete the level!
+  thumbnail: {fileID: 0}

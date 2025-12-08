@@ -8,7 +8,7 @@ public class CheckpointManager : MonoBehaviour
     private bool _hasCheckpoint = false;
 
     [Header("Spawn Settings")]
-    [SerializeField] private Vector2 _levelStartPosition; // Vị trí spawn đầu level
+    private Vector2 _levelStartPosition; // Vị trí spawn đầu level
 
     private void Awake()
     {
