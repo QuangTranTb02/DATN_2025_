@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level 1
   levelNumber: 1
-  sceneName: Level_01
+  levelID: 1
+  Scene:
+    m_SceneAsset: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
+    m_SceneName: Level_01
   playerSpawnPosition: {x: 0, y: 0}
   totalCollectibles: 5
   bestTime: 3.8795261
-  totalDeaths: 1
-  isCompleted: 1
+  totalDeaths: 5
+  isCompleted: 0
   isUnlocked: 1
   stars: 3
   description: Complete the level!
-  thumbnail: {fileID: 0}

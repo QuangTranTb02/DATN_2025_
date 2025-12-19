@@ -9,7 +9,8 @@ public class LevelData : ScriptableObject
     [Header("Level Info")]
     public string levelName = "Level ";
     public int levelNumber = 1;
-    public string sceneName = "Level_0";
+    public string levelID; // Unique ID
+    public SceneField Scene;
 
     [Header("Spawn")]
     public Vector2 playerSpawnPosition = Vector2.zero;
@@ -27,7 +28,7 @@ public class LevelData : ScriptableObject
     [Header("UI Display")]
     [TextArea(2, 4)]
     public string description = "Complete the level!";
-    public Sprite thumbnail; // Icon của level
+    public GameObject LevelButtonObj { get; set; } // Icon của level
 
     // Reset progress (dùng khi debug)
     public void ResetProgress()

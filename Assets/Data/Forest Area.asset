@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b444f223f9f5ce04c91748470937b6e9, type: 3}
+  m_Name: Forest Area
+  m_EditorClassIdentifier: 
+  AreaName: Forest Area
+  Levels:
+  - {fileID: 11400000, guid: b7e48a626f833354b9c7189b458f3243, type: 2}
+  - {fileID: 11400000, guid: 542d2c888f6774744a6f6acdb5ce8384, type: 2}
+  - {fileID: 11400000, guid: c9be03c1ed1100e4894a8fbbf028be16, type: 2}
+  - {fileID: 11400000, guid: e47faa5f99a94bb408d75aaa70499d4a, type: 2}
+  - {fileID: 11400000, guid: ff013439543799745bbbccf1275c2854, type: 2}
+  - {fileID: 11400000, guid: 64109abcdda121d4ba5253403fc92de1, type: 2}
+  - {fileID: 11400000, guid: fb41faaa93b1e9742bdd8bf8b5f7f772, type: 2}
+  - {fileID: 11400000, guid: f397fabef8183ef4393698d6e0605cf3, type: 2}

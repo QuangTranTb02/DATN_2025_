@@ -8,6 +8,8 @@ public class MultiPointMovingTrap : BaseTrap
     [SerializeField] private bool _loop = true;
     [SerializeField] private bool _reverseOnEnd = false;
 
+    [SerializeField] private bool _isRotating = false;
+
     private int _currentWaypointIndex = 0;
     private int _direction = 1; // 1 = forward, -1 = backward
 

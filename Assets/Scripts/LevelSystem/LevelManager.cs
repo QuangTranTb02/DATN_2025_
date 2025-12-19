@@ -82,7 +82,7 @@ public class LevelManager : MonoBehaviour
 
         Log($"Loading level: {level.levelName}");
 
-        StartCoroutine(LoadLevelAsync(level.sceneName));
+        StartCoroutine(LoadLevelAsync(level.Scene));
     }
 
     public void LoadFirstLevel()

@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level 2
   levelNumber: 2
-  sceneName: Level_02
+  levelID: 1-2
+  Scene:
+    m_SceneAsset: {fileID: 102900000, guid: 70252ff63a14b014dbcfd6c63638f146, type: 3}
+    m_SceneName: Level_02
   playerSpawnPosition: {x: 0, y: 0}
   totalCollectibles: 0
   bestTime: 0
@@ -23,4 +26,3 @@ MonoBehaviour:
   isUnlocked: 1
   stars: 0
   description: Complete the level!
-  thumbnail: {fileID: 0}

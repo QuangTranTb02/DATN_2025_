@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RotatingBlade : BaseTrap
+public class Rotating : BaseTrap
 {
     [Header("Rotation Settings")]
     [SerializeField] private float _rotationSpeed = 180f;
