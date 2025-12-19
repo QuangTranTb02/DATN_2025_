@@ -1,9 +1,9 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-
+//Class để có thể Serializable trong Inspector
 [System.Serializable]
 public class SceneField
 {

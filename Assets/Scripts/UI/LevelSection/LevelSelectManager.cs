@@ -68,7 +68,9 @@ public class LevelSelectManager : MonoBehaviour
             Selectable selectable = buttonGO.GetComponent<Selectable>();
             _eventSystemHandler.AddSelectable(selectable);
 
-            if (i > 0)
+            StartCoroutine(AddLocationAfterDelay(buttonGO, buttonRect));
+
+            if (i > 0 && levelButton.LevelData.isUnlocked)
             {
                 LineRenderer line = Instantiate(LinePrefab, LevelParent);
 
@@ -80,6 +82,7 @@ public class LevelSelectManager : MonoBehaviour
                 StartCoroutine(DelayedLineSetup(lineConnector));
             }
         }
+        StartCoroutine(SetupButtonNavigation());
         LevelParent.gameObject.SetActive(true);
         _eventSystemHandler.InitSelectables();
         _eventSystemHandler.SetFirstSelected();
@@ -89,4 +92,64 @@ public class LevelSelectManager : MonoBehaviour
         yield return null;
         lineConnector.UpdateLinePosition();
     }
+    private IEnumerator AddLocationAfterDelay(GameObject buttonGO, RectTransform buttonRect)
+    {
+        yield return null;
+
+        Vector2 buttonScreenPoint = RectTransformUtility.WorldToScreenPoint(_camera, buttonRect.position);
+        Vector3 buttonWorldPos = _camera.ScreenToWorldPoint(new Vector3(buttonScreenPoint.x, buttonScreenPoint.y, _camera.nearClipPlane));
+
+        _buttonLocations.Add(buttonGO, buttonWorldPos);
+    }
+
+    #region Navigation
+
+    private IEnumerator SetupButtonNavigation()
+    {
+        yield return null;
+
+        for (int i = 0; i < _buttonObjects.Count; i++)
+        {
+            GameObject currentButton = _buttonObjects[i];
+            Vector3 currentPos = _buttonLocations[currentButton];
+            Selectable currentSelectable = currentButton.GetComponent<Selectable>();
+            Navigation nav = new Navigation { mode = Navigation.Mode.Explicit };
+
+            //check if previous button exists
+            if (i > 0 && UnlockedLevelIDs.Contains(CurrentArea.Levels[i].levelID))
+            {
+                GameObject prevButton = _buttonObjects[i - 1];
+                Vector3 prevPos = _buttonLocations[prevButton];
+                Vector3 dirToPrev = (prevPos - currentPos).normalized;
+
+                if (Vector3.Dot(dirToPrev, Vector3.right) > 0.7f)
+                    nav.selectOnRight = prevButton.GetComponent<Selectable>();
+                else if (Vector3.Dot(dirToPrev, Vector3.left) > 0.7f)
+                    nav.selectOnLeft = prevButton.GetComponent<Selectable>();
+                else if (Vector3.Dot(dirToPrev, Vector3.up) > 0.7f)
+                    nav.selectOnUp = prevButton.GetComponent<Selectable>();
+                else if (Vector3.Dot(dirToPrev, Vector3.down) > 0.7f)
+                    nav.selectOnDown = prevButton.GetComponent<Selectable>();
+            }
+
+            //check if future button exists
+            if (i < _buttonObjects.Count - 1 && UnlockedLevelIDs.Contains(CurrentArea.Levels[i + 1].levelID))
+            {
+                GameObject nextButton = _buttonObjects[i + 1];
+                Vector3 nextPos = _buttonLocations[nextButton];
+                Vector3 dirToNext = (nextPos - currentPos).normalized;
+
+                if (Vector3.Dot(dirToNext, Vector3.right) > 0.7f)
+                    nav.selectOnRight = nextButton.GetComponent<Selectable>();
+                else if (Vector3.Dot(dirToNext, Vector3.left) > 0.7f)
+                    nav.selectOnLeft = nextButton.GetComponent<Selectable>();
+                else if (Vector3.Dot(dirToNext, Vector3.up) > 0.7f)
+                    nav.selectOnUp = nextButton.GetComponent<Selectable>();
+                else if (Vector3.Dot(dirToNext, Vector3.down) > 0.7f)
+                    nav.selectOnDown = nextButton.GetComponent<Selectable>();
+            }
+            currentSelectable.navigation = nav;
+        }
+    }
+    #endregion
 }

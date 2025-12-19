@@ -1263,7 +1263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6400013009175168179, guid: c5ef7040836941040ae31396e2000312, type: 3}
       propertyPath: _fadeDuration
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6579967880416221245, guid: c5ef7040836941040ae31396e2000312, type: 3}
       propertyPath: m_Layer
