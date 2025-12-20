@@ -16,13 +16,13 @@ MonoBehaviour:
   levelNumber: 2
   levelID: 1-2
   Scene:
-    m_SceneAsset: {fileID: 102900000, guid: 70252ff63a14b014dbcfd6c63638f146, type: 3}
-    m_SceneName: Level_02
+    m_SceneAsset: {fileID: 102900000, guid: f68d3e83a9f613c4fbbfa379386a7fad, type: 3}
+    m_SceneName: Level_03
   playerSpawnPosition: {x: 0, y: 0}
   totalCollectibles: 0
-  bestTime: 0
-  totalDeaths: 0
-  isCompleted: 0
+  bestTime: 28.81036
+  totalDeaths: 7
+  isCompleted: 1
   isUnlocked: 1
-  stars: 0
+  stars: 2
   description: Complete the level!

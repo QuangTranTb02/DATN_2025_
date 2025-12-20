@@ -23,6 +23,6 @@ MonoBehaviour:
   bestTime: 0
   totalDeaths: 0
   isCompleted: 0
-  isUnlocked: 1
+  isUnlocked: 0
   stars: 0
   description: Complete the level!

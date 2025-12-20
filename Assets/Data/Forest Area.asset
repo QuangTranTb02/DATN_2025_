@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AreaName: Forest Area
   Levels:
+  - {fileID: 11400000, guid: 2daaad2bbe98e154d898c5df89077ca4, type: 2}
   - {fileID: 11400000, guid: b7e48a626f833354b9c7189b458f3243, type: 2}
   - {fileID: 11400000, guid: 542d2c888f6774744a6f6acdb5ce8384, type: 2}
   - {fileID: 11400000, guid: c9be03c1ed1100e4894a8fbbf028be16, type: 2}

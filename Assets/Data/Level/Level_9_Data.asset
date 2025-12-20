@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bab0cc628eca4b4488be3e6a1106321, type: 3}
-  m_Name: Level_1_Data
+  m_Name: Level_9_Data
   m_EditorClassIdentifier: 
-  levelName: Level 1
-  levelNumber: 1
-  levelID: 1
+  levelName: Level 8
+  levelNumber: 8
+  levelID: 8
   Scene:
     m_SceneAsset: {fileID: 102900000, guid: f68d3e83a9f613c4fbbfa379386a7fad, type: 3}
     m_SceneName: Level_03
   playerSpawnPosition: {x: 0, y: 0}
-  totalCollectibles: 5
-  bestTime: 3.264084
-  totalDeaths: 24
-  isCompleted: 1
-  isUnlocked: 1
-  stars: 3
+  totalCollectibles: 0
+  bestTime: 0
+  totalDeaths: 0
+  isCompleted: 0
+  isUnlocked: 0
+  stars: 0
   description: Complete the level!

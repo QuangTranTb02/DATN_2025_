@@ -42,7 +42,6 @@ public class LevelManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         Log("LevelManager initialized");
     }
 
@@ -84,12 +83,6 @@ public class LevelManager : MonoBehaviour
 
         StartCoroutine(LoadLevelAsync(level.Scene));
     }
-
-    public void LoadFirstLevel()
-    {
-        LoadLevel(0);
-    }
-
     public void LoadNextLevel()
     {
         int nextIndex = _currentLevelIndex + 1;
@@ -302,7 +295,7 @@ public class LevelManager : MonoBehaviour
         return _collectiblesThisLevel >= _currentLevel.totalCollectibles;
     }
 
-    // ===== SAVE/LOAD =====
+    // ===== SAVE/LOAD IN GAME =====
 
     private void SaveProgress(LevelData level)
     {
@@ -363,6 +356,18 @@ public class LevelManager : MonoBehaviour
     public LevelData GetCurrentLevel() => _currentLevel;
     public LevelData[] GetAllLevels() => _allLevels;
     public int GetCurrentLevelIndex() => _currentLevelIndex;
+
+    public int SetCurrentLevelIndex(int index)
+    {
+        if (index < 0 || index >= _allLevels.Length)
+        {
+            LogError($"Level index {index} out of range!");
+            return -1;
+        }
+        _currentLevelIndex = index;
+        _currentLevel = _allLevels[index];
+        return _currentLevelIndex;
+    }
         
     public int GetTotalStars()
     {
