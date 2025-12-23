@@ -6,9 +6,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using static UnityEditor.Rendering.FilterWindow;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : Singleton<LevelManager>
 {
-    public static LevelManager Instance { get; private set; }
 
     [Header("Level Data")]
     [SerializeField] private LevelData[] _allLevels;
@@ -31,18 +30,7 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        // Singleton pattern
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Log("LevelManager initialized");
+       
     }
 
     private void Start()

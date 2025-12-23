@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5833143770494221360}
   - component: {fileID: 7580846396004548495}
   - component: {fileID: 1870138629098522782}
-  - component: {fileID: 8197515731328233040}
   - component: {fileID: 3403279595110088195}
+  - component: {fileID: 6192770756148494615}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d057f19339fe9784b9382ad69d79d70b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDestroyOnLoad: 1
 --- !u!114 &7580846396004548495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,6 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13598f4a4c975f44882987f972a8a62d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDestroyOnLoad: 1
   _allLevels:
   - {fileID: 11400000, guid: 2daaad2bbe98e154d898c5df89077ca4, type: 2}
   - {fileID: 11400000, guid: b7e48a626f833354b9c7189b458f3243, type: 2}
@@ -85,18 +87,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44b772a3221337543bf302d9158003b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8197515731328233040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6758736278104361863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1868a5b3ed8c67143b74118042c50b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3403279595110088195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,3 +99,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eea6cad2cfb7124cb6fc2520e276346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6192770756148494615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758736278104361863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a219efae803bc94894a8220e696cc5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadMainMenuOnStart: 1
