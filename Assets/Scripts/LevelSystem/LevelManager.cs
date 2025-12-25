@@ -8,6 +8,7 @@ using static UnityEditor.Rendering.FilterWindow;
 
 public class LevelManager : Singleton<LevelManager>
 {
+    //public static LevelManager Instance { get; private set; }
 
     [Header("Level Data")]
     [SerializeField] private LevelData[] _allLevels;
@@ -28,10 +29,17 @@ public class LevelManager : Singleton<LevelManager>
     public System.Action<LevelData> OnLevelCompleted;
     public System.Action OnPlayerDied;
 
-    private void Awake()
-    {
-       
-    }
+    //private void Awake()
+    //{
+    //    if (Instance == null)
+    //    {
+    //        Instance = this;
+    //    }
+    //    else
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
 
     private void Start()
     {
@@ -98,7 +106,7 @@ public class LevelManager : Singleton<LevelManager>
         }
     }
 
-    private IEnumerator LoadLevelAsync(string sceneName)
+    private IEnumerator LoadLevelAsync(SceneField sceneName)
     {
         Log($"Starting async load of scene: {sceneName}");
 
@@ -139,6 +147,7 @@ public class LevelManager : Singleton<LevelManager>
 
     private void InitializeLevel()
     {
+        UIManager.Instance.ShowHUD();
         if (_currentLevel == null)
         {
             LogError("Cannot initialize level: _currentLevel is null!");
@@ -192,6 +201,7 @@ public class LevelManager : Singleton<LevelManager>
 
     public void CompleteLevel()
     {
+        UIManager.Instance.ShowLevelComplete(_currentLevel);
         if (_currentLevel == null)
         {
             LogError("Cannot complete level: _currentLevel is null!");
@@ -391,7 +401,10 @@ public class LevelManager : Singleton<LevelManager>
     {
         return _collectiblesThisLevel;
     }
-
+    internal string GetLevelName()
+    {
+        return _currentLevel != null ? _currentLevel.levelName : "N/A";
+    }
     // ===== DEBUG =====
 
     private void Log(string message)
@@ -410,5 +423,6 @@ public class LevelManager : Singleton<LevelManager>
     {
         UnityEngine.Debug.LogError($"[LevelManager] {message}");
     }
+
     
 }

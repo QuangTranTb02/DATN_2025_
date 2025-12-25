@@ -130,7 +130,7 @@ public class MenuEventSystemHandler : MonoBehaviour
 
     public void OnPointerEnter(BaseEventData eventData)
     {
-        SoundEvent?.Invoke();
+            SoundEvent?.Invoke();
         PointerEventData pointerEventData = eventData as PointerEventData;
         if (pointerEventData != null)
         {

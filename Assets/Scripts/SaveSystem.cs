@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class SaveSystem : Singleton<SaveSystem>
 {
+    public object CurrentSaveData { get; internal set; }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

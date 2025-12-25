@@ -56,6 +56,11 @@ public class Collectible : MonoBehaviour
 
     private void Collect()
     {
+        if (LevelManager.Instance == null)
+            {
+            Debug.LogError("LevelManager instance not found!");
+            return;
+        }
         Debug.Log("Collected!");
 
         // Register với LevelManager

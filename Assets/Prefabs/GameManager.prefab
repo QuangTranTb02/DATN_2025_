@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d057f19339fe9784b9382ad69d79d70b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDestroyOnLoad: 1
+  isDestroyOnLoad: 0
 --- !u!114 &7580846396004548495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13598f4a4c975f44882987f972a8a62d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDestroyOnLoad: 1
+  isDestroyOnLoad: 0
   _allLevels:
   - {fileID: 11400000, guid: 2daaad2bbe98e154d898c5df89077ca4, type: 2}
   - {fileID: 11400000, guid: b7e48a626f833354b9c7189b458f3243, type: 2}
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6758736278104361863}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44b772a3221337543bf302d9158003b3, type: 3}
   m_Name: 

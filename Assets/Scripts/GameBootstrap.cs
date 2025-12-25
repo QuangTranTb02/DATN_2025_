@@ -13,11 +13,11 @@ public class GameBootstrap : MonoBehaviour
     {
         // Initialize managers
         InitializeManagers();
-
+        Debug.LogWarning("[Bootstrap] Game Bootstrap completed.");
         // Load main menu
         if (loadMainMenuOnStart)
         {
-            //LevelManager.Instance.LoadLevel(SceneNames.MainMenu);
+            GameSceneManager.Instance.LoadMenuScene();
         }
     }
 
@@ -27,8 +27,8 @@ public class GameBootstrap : MonoBehaviour
         // Chỉ cần access để trigger Awake()
 
         _ = GameManager.Instance;
-        _ = LevelManager.Instance;
-        _ = UiManager.Instance;
+        _ = GameSceneManager.Instance;
+        _ = UIManager.Instance;
         _ = SaveSystem.Instance;
         _ = AudioManager.Instance;
 

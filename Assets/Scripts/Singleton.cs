@@ -9,7 +9,8 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     [SerializeField] bool isDestroyOnLoad = true;
 
     protected virtual void Awake()
-    {
+    { 
+        //if (Instance != null) { return; }
         if (!Instance)
         {
             Instance = GetComponent<T>();
