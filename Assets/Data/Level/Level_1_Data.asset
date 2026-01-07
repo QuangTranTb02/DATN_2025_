@@ -18,10 +18,10 @@ MonoBehaviour:
   Scene:
     m_SceneAsset: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
     m_SceneName: Level_01
-  playerSpawnPosition: {x: 0, y: 0}
+  playerSpawnPosition: {x: -6, y: 5.4}
   totalCollectibles: 5
-  bestTime: 3.264084
-  totalDeaths: 26
+  bestTime: 1.7864685
+  totalDeaths: 41
   isCompleted: 1
   isUnlocked: 1
   stars: 3
