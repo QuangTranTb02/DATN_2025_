@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ee0de94cb94a042acac42dc105df23, type: 3}
+  m_Name: KelvinDialoge
+  m_EditorClassIdentifier: 
+  line:
+  - Hello
+  - Hey, hey,hey
+  - How Are you
+  - Bye
+  - 1
+  - 566
+  actor: {fileID: 11400000, guid: f8050ab51f816a940b9fed8d52c4ea7a, type: 2}

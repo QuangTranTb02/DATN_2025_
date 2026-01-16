@@ -1,23 +1,17 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-/// <summary>
-/// GameManager - Quản lý flow game và tích hợp SaveSystem
-/// </summary>
-public class GameManager : Singleton<GameManager>
+public class GameManager : Singleton<GameManager> 
 {
-    //private void OnLevelStart()
-    //{
-    //    UIManager.Instance.ShowHUD();
-    //}
-
-    //private void Update()
-    //{
-    //    if (GameSceneManager.Instance.IsInGameplay())
-    //    {
-    //        levelTimer += Time.deltaTime;
-    //        UIManager.Instance.UpdateHUD(currentCoins, levelTimer, playerLives);
-    //    }
-    //}
-
+    public PlayerController m_PlayerController;
+    public ItemContainer inventoryContainer;
+    public ItemDragAndDropController DragAndDropController;
+    public DayTimeController DayTimeController;
+    public DialogueSystem dialogueSystem;
+    public ItemList itemDB;
+    public OnScreenMessageSystem messageSystem;
+    public SenceTint screenTint;
+    //public DataManager dataManager;
+    public GameObject FishingMiniGame;
 }

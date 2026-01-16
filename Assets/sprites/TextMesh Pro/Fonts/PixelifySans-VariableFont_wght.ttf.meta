@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: f736cecf1293f7644b75a8e4e73831b5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Pixelify Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 715651aadf10cc34394ff4cacb635a4d, type: 3}
+  - {fileID: 12800000, guid: 224a13d8a37b8624191f48814e666c37, type: 3}
+  - {fileID: 12800000, guid: 459ae82aef709244eba4872d884a63e9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

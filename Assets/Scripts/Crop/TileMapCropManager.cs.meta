@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c861e4de1b7e0a749955d4255a52017b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Plowed: {instanceID: 0}
+  - Seeded: {instanceID: 0}
+  - CropsSpriteprefab: {instanceID: 0}
+  - container: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

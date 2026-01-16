@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42776189555f9a4b80b8adb2371f5b9, type: 3}
+  m_Name: StoreSceneObjSpawn
+  m_EditorClassIdentifier: 
+  strings:
+  - '{"spawedObjectDatas":[{"objectID":2,"worldPosition":{"x":25.360916137695314,"y":-0.6694660186767578,"z":-0.00006694660260109231}},{"objectID":1,"worldPosition":{"x":23.124980926513673,"y":16.206745147705079,"z":0.001620674505829811}},{"objectID":0,"worldPosition":{"x":27.26082992553711,"y":2.1650657653808595,"z":0.0002165065670851618}},{"objectID":2,"worldPosition":{"x":27.878320693969728,"y":6.982966423034668,"z":0.0006982966442592442}},{"objectID":1,"worldPosition":{"x":28.725154876708986,"y":-13.835314750671387,"z":-0.0013835314894095064}},{"objectID":1,"worldPosition":{"x":27.677709579467775,"y":4.6959075927734379,"z":0.00046959074097685516}},{"objectID":2,"worldPosition":{"x":23.515113830566408,"y":-20.042312622070314,"z":-0.0020042313262820246}},{"objectID":2,"worldPosition":{"x":25.365283966064454,"y":-0.9721145629882813,"z":-0.00009721145033836365}},{"objectID":0,"worldPosition":{"x":29.61783218383789,"y":-14.553409576416016,"z":-0.0014553408836945892}}]}'
+  - '{"spawedObjectDatas":[{"objectID":3,"worldPosition":{"x":65.60887145996094,"y":22.811458587646486,"z":0.002281145891174674}},{"objectID":0,"worldPosition":{"x":69.53277587890625,"y":24.238407135009767,"z":0.0024238405749201776}},{"objectID":0,"worldPosition":{"x":45.277870178222659,"y":22.150741577148439,"z":0.0022150741424411537}},{"objectID":2,"worldPosition":{"x":35.749610900878909,"y":22.710586547851564,"z":0.00227105850353837}},{"objectID":3,"worldPosition":{"x":121.65005493164063,"y":22.995405197143556,"z":0.0022995404433459045}},{"objectID":2,"worldPosition":{"x":34.801116943359378,"y":25.4211368560791,"z":0.0025421136524528267}},{"objectID":3,"worldPosition":{"x":93.90331268310547,"y":22.788345336914064,"z":0.002278834581375122}},{"objectID":0,"worldPosition":{"x":114.06260681152344,"y":26.374746322631837,"z":0.002637474564835429}},{"objectID":3,"worldPosition":{"x":32.106300354003909,"y":25.967226028442384,"z":0.002596722450107336}}]}'

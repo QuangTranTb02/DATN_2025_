@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5b50a49181d14b81a40d6081d8b0b, type: 3}
+  m_Name: CarrotSeed
+  m_EditorClassIdentifier: 
+  id: 2
+  Name: CarrotSeed
+  Icon: {fileID: -1107934221, guid: f57a2377af7268e4db5f6acaf4dfb6a8, type: 3}
+  Stackable: 1
+  OnAction: {fileID: 0}
+  OnTileMapAction: {fileID: 11400000, guid: 859638c57b878204dbf37b050d76760d, type: 2}
+  OnItemUsed: {fileID: 11400000, guid: 859638c57b878204dbf37b050d76760d, type: 2}
+  crop: {fileID: 11400000, guid: a8e841ef091af3544b310932ca61b9fd, type: 2}
+  iconHightlight: 0
+  itemPrefab: {fileID: 0}
+  isWeapon: 0
+  damage: 0
+  canSold: 0
+  price: 100
